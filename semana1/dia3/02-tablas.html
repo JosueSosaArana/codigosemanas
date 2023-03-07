@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: #222;
+        color: #eee;
+        font-family: times New Roman;
+      }
+      code {
+        font-family: consolas;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Filas y columnas</h2>
+        <p>Las tablas se colocan dentro de un etiqueta <code>table</code></p>
+        <p>Las tablas tienen tres partes</p>
+        <ul>
+          <li>thead</li>
+          <li>tbody</li>
+          <li>tfoot</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabla Simple</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Descripcioón</th>
+              <th>Precio Unitario</th>
+              <th>Precio total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Taclados mecanicos</td>
+              <td>S/ 150.00</td>
+              <td>S/ 300.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Mouse</td>
+              <td>S/ 50.00</td>
+              <td>S/ 50.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Monitor</td>
+              <td>S/ 500.00</td>
+              <td>S/ 1500.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" align="center">TOTAL</td>
+              <td>S/ 4000.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Combinando Filas</h2>
+        <p>Para combinar filas se usa el atributo <code>rowspan</code></p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Categorias</th>
+              <th>Etiquetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="6">Formulario</td>
+            </tr>
+            <tr>
+              <td>Item 1</td>
+            </tr>
+            <tr>
+              <td>Item 2</td>
+            </tr>
+            <tr>
+              <td>Item 3</td>
+            </tr>
+            <tr>
+              <td>Item 4</td>
+            </tr>
+            <tr>
+              <td>Item 5</td>
+            </tr>
+            <tr>
+              <td rowspan="6">Tabla</td>
+            </tr>
+            <tr>
+              <td>Persona 1</td>
+            </tr>
+            <tr>
+              <td>Persona 2</td>
+            </tr>
+            <tr>
+              <td>Persona 3</td>
+            </tr>
+            <tr>
+              <td>Persona 4</td>
+            </tr>
+            <tr>
+              <td>Persona 5</td>
+            </tr>
+            <tr>
+              <td rowspan="7">Texto</td>
+            </tr>
+            <tr>
+              <td>Articulo 1</td>
+            </tr>
+            <tr>
+              <td>Articulo 2</td>
+            </tr>
+            <tr>
+              <td>Articulo 3</td>
+            </tr>
+            <tr>
+              <td>Articulo 4</td>
+            </tr>
+            <tr>
+              <td>Articulo 5</td>
+            </tr>
+            <tr>
+              <td>Articulo 6</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

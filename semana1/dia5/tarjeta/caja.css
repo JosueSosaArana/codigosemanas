@@ -1,0 +1,33 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://th.bing.com/th/id/R.18ad1ba11b9246a2ebf5978b903ab384?rik=ac1zX4X6cy%2bhoQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2017%2f07%2funited-states-chicago-sunset-1920x1080.jpg&ehk=92k6eOB9E90l1cFMcx8kKmgVXLyz7pYa%2bWn7aNYkRhU%3d&risl=&pid=ImgRaw&r=0);
+}
+.cartilla {
+  backface-visibility: visible;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 250px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 30px 0 #05f053;
+}
+.cartilla .img-principal {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.cartilla .nombre {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(178, 245, 250);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}

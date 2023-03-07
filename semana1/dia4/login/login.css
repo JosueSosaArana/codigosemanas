@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://th.bing.com/th/id/R.a9c30a27350dddc94f32b4d9295cf82b?rik=Fzzj31lUdkTlDA&pid=ImgRaw&r=0);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* para etiqueta se coloca el nombre y declara propiedades{ */
+/* body{
+    background-color: #4f22f1;
+} */
+
+/* para clases se declara anteponiendo .al nombre de la clase */
+/* .cuerpo{
+    background-color: aquamarine;
+} */
+
+/* para id se declara anteponiendo #al nombre del id */
+/* #cara{
+    background-color: lightgreen;
+} */
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: black;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 80px 60px;
+  border-radius: 20px;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box .LogIn {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 207px;
+  background: #8a0808;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}

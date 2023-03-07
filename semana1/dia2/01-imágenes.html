@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <header>
+      <h1>Imágenes en HTML</h1>
+    </header>
+    <main>
+      <h2>Usando la etiqueta img</h2>
+      <section>
+        <img src="https://placehold.jp/300x300.png" alt="imagen de prueba" />
+      </section>
+      <!--Para imagenes locales-->
+      <section>
+        <!-- punto y slash significa la carpeta donde me encuentro -->
+        <img src="./ejemplo.png" alt="" width="300" height="150" />
+      </section>
+      <section>
+        <!-- ../ significa la carpeta "imagenes" -->
+        <img src="./imagenes/arena.jpeg" alt="arena" />
+      </section>
+      <section>
+        <img src="./imagenes/piedra.jpeg" alt="piedra" />
+      </section>
+      <section>
+        <img
+          src="./../fotos/avatar/piedra2.jpeg"
+          alt="piedra1"
+          width="200"
+          height="100"
+        />
+      </section>
+      <section>
+        <!-- etiquetas en bloque (por defecto ocupan el 100%) -->
+        <img src="./imagenes/arena.jpeg" alt="" width="150" height="150" />
+        <img src="./imagenes/piedra.jpeg" alt="" width="150" height="150" />
+        <article>
+          <img src="ejemplo.png" alt="" />
+        </article>
+      </section>
+      <section>
+        <img src="ejemplo.png" alt="" />
+        <figcaption>Este es el ejemplo de imagen</figcaption>
+      </section>
+    </main>
+  </body>
+</html>
