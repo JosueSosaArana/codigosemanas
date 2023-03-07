@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repaso</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        sectionf{
-            font-size: 20px;
-        }
-        p{
-            font-size: 36px;
-        }
-        .grande .rojo {
-            font-size: 50px;
-        }
-
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+      body {
+        color: #eee;
+        background-color: #222;
+        font-family: "Roboto", sans-serif;
+      }
+      section {
+        font-size: 20px;
+      }
+      p {
+        font-size: 36px;
+      }
+      /* todos los elementos de clase "rojo" que sean descendientes(en cualquier nivel)  de la clase "grande" */
+      .grande .rojo {
+        font-size: 50px;
+      }
+      /* Todos los hijos directos "li" (en primer grado)  de un elemento "ul"*/
+      ul > li {
+        border: 1px solid yellow;
+      }
+      ol li:nth-child(2) {
+        border: 1px solid green;
+      }
+      h1{
+        font-weight: 100;
+        text-align: center;
+      }
+      h2{
+        font-weight: 300;
+        text-align: right;
+      }
+      a{
+        text-decoration: none;
+        color: #eee;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <p>texto del parrafo</p>
-        texto fuera del parrafo
-        <p class="grande">texto del <span class="rojo"> parrafo</span> grande</p>
+      <p>texto del parrafo</p>
+      texto fuera del párrafo
+      <p class="grande">texto del <span class="rojo">parrafo</span> grande</p>
     </section>
-</body>
+    <section>
+      <ul>
+        <li>JavaScript</li>
+        <ol>
+          <li>NodeJS</li>
+          <li>Browser</li>
+        </ol>
+        <li>Python</li>
+        <li>
+            <a href="">ver mas</a>
+        </li>
+        <li>TypeScript</li>
+      </ul>
+    </section>
+    <section class="fuente-roboto">
+      <h1>Hola Mundo</h1>
+      <h2>Hola amigos</h2>
+    </section>
+  </body>
 </html>
