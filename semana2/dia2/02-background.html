@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding-bottom: 400px;
+      }
+      .caja-1 {
+        height: 40px;
+        background-color: blueviolet;
+        text-align: center;
+      }
+      .caja-2 {
+        height: 100px;
+        background-image: url(./textura.png);
+        background-color: red;
+        /* background-repeat: repeat-x; */
+        background-size: cover;
+        /* deja fijado la imagen en el fondo de pantalla Paralax */
+        background-attachment: fixed;
+      }
+      .caja-3 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid orange;
+        border-radius: 50%;
+      }
+      .caja-4 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid orange;
+        border-radius: 50%;
+        background-image: url(./textura.png);
+      }
+      .caja-5 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid orange;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      /* Solucion para ajustar la imagen */
+      .caja-5 img{
+        /* width: 100%;
+        height: 100%; */
+        width: 200px;
+        height: 200px;
+      }
+      input{
+        border: 0;
+        border-bottom: 2px solid green;
+        outline: none;
+        border-radius: 5px;
+        padding: 8px 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja-1">JHola</div>
+    <div class="caja-2">caja2</div>
+    <div class="caja-3">caja3</div>
+    <div class="caja-4">caja-4</div>
+    <div class="caja-5">
+      <img src="./textura.png" alt="textura" />
+    </div>
+    <input type="Hola mundo" placeholder="What's your name">
+  </body>
+</html>

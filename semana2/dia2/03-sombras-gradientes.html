@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sombras y Gradientes</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #a6f7b0;
+        color: black;
+      }
+      .card {
+        width: 500px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid grey; */
+        /* box-shadow: brown 0px 0px 10px 1px;
+        border-radius: 8px;*/
+        padding: 40px;
+        margin-top: 60px;
+        border-radius: 53px;
+        background: linear-gradient(145deg, #95de9e, #b2ffbc);
+        box-shadow: 19px 19px 29px #6ea374, -19px -19px 29px #deffec;
+      }
+      .caja-gradiente {
+        width: 500px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+        margin-top: 20px;
+        border-radius: 30px;
+        background-image: -webkit-linear-gradient(top, #02690c, #6de679);
+      }
+      .caja-gradiente-2 {
+        width: 500px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+        margin-top: 20px;
+        border-radius: 30px;
+        background: #ff512f; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #dd2476,
+          #ff512f
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #dd2476,
+          #ff512f
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .caja-blur {
+        filter: blur(5px);
+        margin-top: 20px;
+      }
+      /* Hover es cuando el mouse esta encima del elemento */
+      .caja-blur:hover {
+        filter: blur(0px) grayscale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ea soluta
+      harum aliquid, assumenda, aut delectus voluptas dicta fugiat eos officiis!
+      Saepe similique animi sint dolor iure atque explicabo minima.
+    </div>
+    <div class="caja-gradiente"></div>
+    <div class="caja-gradiente-2"></div>
+    <div class="caja-blur">
+      <img src="./Apertura.png" alt="" />
+    </div>
+  </body>
+</html>
