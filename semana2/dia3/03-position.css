@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 2000px;
+}
+
+.caja-1,
+.caja-2 {
+  width: 200px;
+  height: 200px;
+}
+.caja-1 {
+  border: 1px solid red;
+  left: calc(50% - 100px);
+  position: relative;
+  top: calc(50% - 100px);
+}
+.caja-2 {
+  border: 1px solid purple;
+  position: relative;
+}
+.circulo-2 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(88, 10, 171);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.circulo-3 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(0, 61, 81);
+  border-radius: 50%;
+  position: absolute;
+}
+.button {
+  background-color: bisque;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

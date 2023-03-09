@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tansiciones, transformaciones y animaciones</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #99ffdd;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(35, 112, 255);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        /* Las transformaciones funcionan solo para elementos bloqueandtes */
+        transform: scale(11);
+      }
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        height: 200px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        padding: 10px;
+        box-shadow: 12px 12px 19px #508573, -12px -12px 19px #e2ffff;
+        border: 1px solid rgb(8, 82, 2);
+        border-radius: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+        box-sizing: border-box;
+        transition: all 3s ease-in-out 0.5s;
+        /* transform: scale(1.2); */
+      }
+      p:hover {
+        transform: scale(1.2);
+        background: linear-gradient(145deg, #8ae6c7, #a4ffec);
+        /* width: 115px; */
+      }
+      /* Caracteristicas globales de las clases */
+      .clase-1,
+      .clase-2, .clase-3 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(18, 36, 11);
+        border-radius: 50%;
+      }
+      /* definiendo las transiciones por clase */
+      .clase-1{
+        transition: all 3s ease 0s;
+      }
+      .clase-2{
+        transition: all 3s ease-out 0s;
+      }
+      .clase-3{
+        transition: all 3s ease-in 0s;
+      }
+      /* Colores de las bolitas */
+      .fondo-rojo {
+        background-color: #ff0000;
+      }
+      .fondo-verde {
+        background-color: #00ff00;
+      }
+      .fondo-azul {
+        background-color: #0000ff;
+      }
+      /* El efecto solo afecta al elemento de clase .clase-1 que es descendiente del elemento de clase .global si y solo si el elemento de clase .global tienee el estado hover */
+      .global:hover .clase-1 {
+        transform: translate(1000px, 0px)
+      }
+      .global:hover .clase-2 {
+        transform: translate(1000px, 0px)
+      }
+      .global:hover .clase-3 {
+        transform: translate(1000px, 0px)
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
+      blanditiis voluptate, esse, sapiente quasi obcaecati corporis repellat
+      perspiciatis id vitae beatae temporibus? Possimus laudantium repellat iste
+      autem officia minus architecto? Voluptates autem facilis deleniti
+      reiciendis. Voluptatibus, molestias. Inventore nesciunt, beatae, alias
+      blanditiis reiciendis quas illo aperiam vel quo est excepturi magni
+      provident debitis omnis dolores numquam nobis iste quis accusantium.
+    </p>
+    <a href="#">Nosotros</a>
+    <div class="global">
+      <div class="clase-1 fondo-rojo"></div>
+      <div class="clase-2 fondo-verde"></div>
+      <div class="clase-3 fondo-azul"></div>
+    </div>
+  </body>
+</html>
