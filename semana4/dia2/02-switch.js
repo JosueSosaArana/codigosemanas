@@ -35,9 +35,10 @@ switch (dia) {
 
 // PRIMERA FORMA
 
-const edad = 18;
+const edad = 25;
 
 const esMayorDeEdad = edad >= 18 ? "Es mayor de edad" : "Es menor de edad";
+console.log(esMayorDeEdad)
 
 // SEGUNDA FORMA
 
