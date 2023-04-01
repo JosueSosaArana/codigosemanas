@@ -1,0 +1,50 @@
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-grey: #64748b;
+}
+.dark-theme {
+  --clr-bcg: #181c24;
+  --clr-font: #7292e3;
+  --clr-primary: #ffa7c4;
+  --clr-grey: #d4e3f6;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--clr-bcg);
+  color: var(--clr-font);
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  transition: all 0.5s linear;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.nav-center span {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.btn {
+    background: var(--clr-grey);
+    color: var(--clr-bcg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
